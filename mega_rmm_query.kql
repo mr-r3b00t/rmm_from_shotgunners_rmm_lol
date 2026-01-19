@@ -1,5 +1,5 @@
 DeviceProcessEvents
-| where Timestamp > ago(7d)
+| where Timestamp > ago(1h)
 | where ActionType == "ProcessCreated"
 | where 
     (
